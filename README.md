@@ -53,12 +53,12 @@ The Sonar Mines vs. Rocks dataset is used in this project. It contains 208 insta
 -   Train the model:
 
     ```sh
-    python train_model.py
+    python src\RockMinePrediction.py --train --file csv/dataset [--output pkl/output/file]
     ```
 
 -   Predict the classification of new data:
     ```sh
-    python src\RockMinePrediction.py --data "Your data here"
+    python src\RockMinePrediction.py --file csv/input [--output csv/output/directory] [--model pkl/model/file]
     ```
 
 ## Model
